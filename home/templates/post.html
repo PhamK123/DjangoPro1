@@ -6,7 +6,7 @@
       <div class="card-body">
         <h1>{% block title %} {{ project.title }} {% endblock title %}</h1>
         <p class="card-text ">{{ project.content | safe }}</p>
-        <p class="card-image ">{{ project.image }}</p>
+        <img class="thumbnail" src="{{ project.ImageURL }}" alt="" style="width: -webkit-fill-available;" >
       </div>
     </div>
     {% block sidebar %} {% include 'sidebar.html' %} {% endblock sidebar %}
